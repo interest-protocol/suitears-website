@@ -1,4 +1,4 @@
-# IPX INTERFACE TEMPLATE
+# SUITears Landing Page
 
 ## Contributing
 
