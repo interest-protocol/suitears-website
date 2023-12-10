@@ -1,12 +1,13 @@
-import { Box } from '@interest-protocol/ui-kit';
 import { FC } from 'react';
+
+import Layout from '@/components/layout';
 
 import { Hero } from './components';
 
 const Landing: FC = () => (
-  <Box>
+  <Layout>
     <Hero />
-  </Box>
+  </Layout>
 );
 
 export default Landing;
