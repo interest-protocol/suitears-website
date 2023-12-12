@@ -2,11 +2,12 @@ import { FC } from 'react';
 
 import Layout from '@/components/layout';
 
-import { Hero } from './components';
+import { Hero, Proven } from './components';
 
 const Landing: FC = () => (
   <Layout>
     <Hero />
+    <Proven />
   </Layout>
 );
 
