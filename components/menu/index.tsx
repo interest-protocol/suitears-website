@@ -2,10 +2,11 @@ import { Box, Button } from '@interest-protocol/ui-kit';
 import { FC } from 'react';
 
 import { BarsSVG } from '../svg';
+import { MenuProps } from './menu.types';
 
-const Menu: FC = () => {
+const Menu: FC<MenuProps> = ({ onClick }) => {
   return (
-    <Box position="relative" display={['flex', 'none']}>
+    <Box onClick={onClick} position="relative" display={['flex', 'none']}>
       <Button isIcon variant="text">
         <BarsSVG maxHeight="1rem" maxWidth="1rem" width="100%" />
       </Button>
