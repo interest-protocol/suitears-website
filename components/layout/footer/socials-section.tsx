@@ -1,5 +1,4 @@
 import { Box, Typography } from '@interest-protocol/ui-kit';
-import Link from 'next/link';
 
 import { DiscordSVG, GithubSVG, TelegramSVG, XSVG } from '@/components/svg';
 const SocialSection = () => (
@@ -7,8 +6,8 @@ const SocialSection = () => (
     <Box fontFamily="Proto">
       <Typography
         size={'medium'}
-        fontWeight="500"
         variant={'body'}
+        fontWeight="500"
         fontFamily="Proto"
         textAlign="center"
       >
@@ -16,7 +15,7 @@ const SocialSection = () => (
       </Typography>
     </Box>
     <Box display="flex" gap="xs" justifyContent="center" mt="s">
-      <Link
+      <a
         href="https://discord.gg/interestprotocol"
         target="_blank"
         rel="noreferrer"
@@ -31,11 +30,11 @@ const SocialSection = () => (
         >
           <DiscordSVG maxHeight="100%" maxWidth="100%" width="100%" />
         </Box>
-      </Link>
-      <Link
-        href="https://github.com/interest-protocol/"
+      </a>
+      <a
         target="_blank"
         rel="noreferrer"
+        href="https://github.com/interest-protocol/"
       >
         <Box
           p="xs"
@@ -47,12 +46,8 @@ const SocialSection = () => (
         >
           <GithubSVG maxHeight="100%" maxWidth="100%" width="100%" />
         </Box>
-      </Link>
-      <Link
-        href="https://t.me/interestprotocol"
-        target="_blank"
-        rel="noreferrer"
-      >
+      </a>
+      <a href="https://t.me/interestprotocol" target="_blank" rel="noreferrer">
         <Box
           p="xs"
           width="2.5rem"
@@ -63,12 +58,8 @@ const SocialSection = () => (
         >
           <TelegramSVG maxHeight="100%" maxWidth="100%" width="100%" />
         </Box>
-      </Link>
-      <Link
-        href="https://x.com/interest_dinero"
-        target="_blank"
-        rel="noreferrer"
-      >
+      </a>
+      <a href="https://x.com/interest_dinero" target="_blank" rel="noreferrer">
         <Box
           p="xs"
           width="2.5rem"
@@ -79,7 +70,7 @@ const SocialSection = () => (
         >
           <XSVG maxHeight="100%" maxWidth="100%" height="100%" />
         </Box>
-      </Link>
+      </a>
     </Box>
   </Box>
 );
