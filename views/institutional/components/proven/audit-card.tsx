@@ -19,11 +19,11 @@ const AuditCard: FC = () => {
       maxWidth="100%"
       width="44.25rem"
       borderRadius="2rem"
-      border={`0.063rem solid ${theme.colors.onPrimary}`}
       justifyContent="space-between"
       height={['26.625rem', '26.625rem', 'auto']}
       flexDirection={['column', 'column', 'row']}
       alignItems={['center', 'center', 'flex-start']}
+      border={`0.063rem solid ${theme.colors.onPrimary}`}
       background={`linear-gradient(36deg, ${theme.colors.onPrimary} 2.01%, rgba(255, 255, 255, 0.16) 98.41%)`}
     >
       <Box
@@ -50,7 +50,7 @@ const AuditCard: FC = () => {
           fontWeight="500"
           fontStyle="normal"
           lineHeight="1.5rem"
-          color="#000000B8s"
+          color="#000000B8"
           textAlign={['center', 'start']}
         >
           MOVEBIT, a third-party blockchain security company focused on Move
@@ -60,23 +60,29 @@ const AuditCard: FC = () => {
           variant="outline"
           SuffixIcon={
             <ArrowRightSVG
-              maxHeight="1.125rem"
-              maxWidth="1.125rem"
               width="100%"
+              maxWidth="1.125rem"
+              maxHeight="1.125rem"
             />
           }
+          pr="m"
+          pl="xl"
+          pt="0.625rem"
+          pb="0.625rem"
           borderRadius="xs"
           border={`0.063rem solid ${theme.colors.outlineVariant}`}
-          pt="0.625rem"
-          pr="m"
-          pb="0.625rem"
-          pl="xl"
         >
           Read Audit
         </Button>
       </Box>
       <Box>
-        <Button fontSize="s" variant="outline" py="2xs" px="0.625rem">
+        <Button
+          py="2xs"
+          fontSize="s"
+          px="0.625rem"
+          variant="outline"
+          border={`0.063rem solid ${theme.colors.outlineVariant}`}
+        >
           Audited
         </Button>
       </Box>
