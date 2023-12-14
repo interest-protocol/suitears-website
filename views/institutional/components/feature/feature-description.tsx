@@ -12,9 +12,9 @@ const FeatureDescription: FC = () => (
       textAlign="center"
       as="h1"
       whiteSpace="wrap"
-      fontSize={['2.5rem', '3.563rem']}
+      fontSize={['6xl', '8xl']}
       fontWeight="900"
-      lineHeight="4rem"
+      lineHeight="6xl"
       textTransform="uppercase"
       color="onSurface"
       size="large"
@@ -22,7 +22,7 @@ const FeatureDescription: FC = () => (
     >
       Easy peasy {<br />}& fun
     </Typography>
-    <Button textTransform="uppercase" my="2rem" variant="filled">
+    <Button textTransform="uppercase" my="5xl" variant="filled">
       Get started
     </Button>
   </Box>

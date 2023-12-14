@@ -6,8 +6,7 @@ import FeatureHeader from './feature-header';
 
 const Feature: FC = () => (
   <Box
-    height={['260vh', '260vh', '260vh', '305vh']}
-    width="100vw"
+    height={['260vh', '260vh', '260vh', '310vh']}
     display="flex"
     flexDirection="column"
     justifyContent="center"

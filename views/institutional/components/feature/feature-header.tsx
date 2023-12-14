@@ -12,18 +12,18 @@ const FeatureHeader: FC = () => (
     flexDirection="column"
     justifyContent="center"
   >
-    <Tag variant="outline" size="medium" width="max-content" mb="2rem">
+    <Tag variant="outline" size="medium" width="max-content" mb="2xl">
       How it works
     </Tag>
     <Typography
       size="large"
-      mb="1rem"
+      mb="m"
       variant="title"
       fontWeight="700"
       fontStyle="normal"
       textAlign="center"
-      fontSize="2.8125rem"
-      lineHeight="3.25rem"
+      fontSize="7xl"
+      lineHeight="5xl"
       fontFamily="Satoshi"
       textTransform="uppercase"
     >
