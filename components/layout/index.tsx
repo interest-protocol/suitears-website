@@ -5,11 +5,11 @@ import Header from '../header';
 
 const Layout: FC<PropsWithChildren> = ({ children }) => (
   <Box
-    backgroundImage="linear-gradient(0deg, #EEEA, #EEEA), url('/img/noise.png')"
-    backgroundPosition="top left"
-    backgroundRepeat="no-repeat"
-    backgroundSize="cover"
     minHeight="100vh"
+    backgroundSize="cover"
+    backgroundRepeat="no-repeat"
+    backgroundPosition="top left"
+    backgroundImage="linear-gradient(0deg, #EEEA, #EEEA), url('/img/noise.webp')"
   >
     <Header />
     {children}

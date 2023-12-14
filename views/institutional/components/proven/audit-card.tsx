@@ -45,8 +45,8 @@ const AuditCard: FC = () => {
         alignItems="flex-start"
       >
         <Typography
-          size="medium"
-          variant="title"
+          size="large"
+          variant="body"
           fontWeight="500"
           fontStyle="normal"
           lineHeight="1.5rem"
@@ -80,6 +80,7 @@ const AuditCard: FC = () => {
           py="2xs"
           fontSize="s"
           px="0.625rem"
+          gap="0.375rem"
           variant="outline"
           border={`0.063rem solid ${theme.colors.outlineVariant}`}
         >

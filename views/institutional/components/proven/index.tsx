@@ -29,20 +29,27 @@ const Proven: FC = () => (
         alignItems="center"
         flexDirection="column"
       >
-        <Typography size="medium" fontFamily="Satoshi" variant="display">
+        <Typography
+          size="medium"
+          fontWeight="700"
+          variant="display"
+          fontFamily="Satoshi"
+          lineHeight="3.25rem"
+        >
           PROVEN
         </Typography>
         <Typography
-          size="medium"
+          size="large"
           variant="body"
           fontWeight="500"
           fontStyle="normal"
           textAlign="center"
+          lineHeight="1.5rem"
           fontFamily="Satoshi"
         >
-          {`Our team has a track record of successfully deploying and managing
-            an Audited DEX on Sui's mainnet, as well as ranking highly on
-            different Sui hackathons.`}
+          {`Our team has a track record of successfully deploying and managing an
+          Audited DEX on Sui's mainnet, as well as ranking highly on different
+          Sui hackathons.`}
         </Typography>
       </Box>
       <AuditCard />
