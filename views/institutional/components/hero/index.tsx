@@ -4,18 +4,19 @@ import { FC } from 'react';
 const Hero: FC = () => (
   <Box
     pt="10xl"
-    minHeight="100vh"
+    minHeight="100%"
     bg="url(/img/hero.png)"
     backgroundPosition="bottom center"
     backgroundSize="cover"
   >
     <Box
-      height="100vh"
-      width="100vw"
+      height="100%"
+      width="100%"
       overflow="hidden"
       bg="url(/img/hero-illustration.svg)"
-      backgroundPosition="bottom center"
-      backgroundSize="cover"
+      backgroundPosition="center"
+      backgroundRepeat="no-repeat"
+      backgroundSize="100%"
     >
       <Box
         width="100vw"
@@ -37,9 +38,9 @@ const Hero: FC = () => (
             textAlign="center"
             as="h1"
             whiteSpace="wrap"
-            fontSize={['2.5rem', '3.563rem']}
+            fontSize={['6xl', '8xl']}
             fontWeight="900"
-            lineHeight="4rem"
+            lineHeight="6xl"
             textTransform="uppercase"
             color="onSurface"
             size="large"
@@ -47,7 +48,7 @@ const Hero: FC = () => (
           >
             Streamlined Development for Move Creators
           </Typography>
-          <Button textTransform="uppercase" my="4rem" variant="filled">
+          <Button textTransform="uppercase" my="8xl" variant="filled">
             Get started
           </Button>
         </Box>
