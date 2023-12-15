@@ -9,6 +9,7 @@ const BenefitGroupCard: FC = () => (
   <Box
     flexDirection="column"
     display={['flex', 'flex', 'flex', 'grid']}
+    gap="1.5rem"
     gridTemplateColumns="repeat(3, 1fr)"
   >
     <BenefitsCard

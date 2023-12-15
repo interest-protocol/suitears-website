@@ -22,8 +22,8 @@ const BenefitHeader: FC = () => (
       fontWeight="700"
       fontStyle="normal"
       textAlign="center"
-      fontSize="2.8125rem"
-      lineHeight="3.25rem"
+      fontSize={['2.25rem', '2.25rem', '2.25rem', '2.8125rem']}
+      lineHeight={['2.75rem', '2.75rem', '2.75rem', '3.25rem']}
       fontFamily="Satoshi"
       textTransform="uppercase"
     >
