@@ -5,7 +5,7 @@ const Hero: FC = () => (
   <Box
     pt="10xl"
     minHeight="100%"
-    bg="url(/img/hero.png)"
+    bg="url(/img/hero.webp)"
     backgroundPosition="bottom center"
     backgroundSize="cover"
   >
@@ -13,7 +13,7 @@ const Hero: FC = () => (
       height="100%"
       width="100%"
       overflow="hidden"
-      bg="url(/img/hero-illustration.svg)"
+      bg="url(/img/hero-illustration.webp)"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       backgroundSize="100%"
