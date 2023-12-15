@@ -25,7 +25,7 @@ const Feature: FC = () => (
         height={['70vh', '70vh', '70vh', '100%']}
         width={['100%', '100%', '100%', '100%']}
         overflow="hidden"
-        bg="url(/img/features.svg)"
+        bg="url(/img/features.webp)"
         backgroundPosition="bottom center"
         backgroundSize="100%"
         backgroundRepeat="no-repeat"
