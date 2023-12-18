@@ -4,28 +4,27 @@ import { FC } from 'react';
 const BenefitHeader: FC = () => (
   <Box
     mt="2xl"
-    py={['2rem', '2rem', '2rem', '4rem']}
     mx="auto"
-    width={['100%', '100%', '100%', '40rem']}
     display="flex"
     alignItems="center"
     flexDirection="column"
     justifyContent="center"
+    py={['2xl', '2xl', '2xl', '8xl']}
+    maxWidth={['100%', '100%', '100%', '50%']}
   >
-    <Tag variant="outline" size="medium" width="max-content" mb="2rem">
+    <Tag variant="outline" size="medium" width="max-content" mb="2xl">
       Unique Feature
     </Tag>
     <Typography
+      mb="m"
       size="large"
-      mb="1rem"
       variant="title"
       fontWeight="700"
       fontStyle="normal"
       textAlign="center"
-      fontSize={['2.25rem', '2.25rem', '2.25rem', '2.8125rem']}
-      lineHeight={['2.75rem', '2.75rem', '2.75rem', '3.25rem']}
-      fontFamily="Satoshi"
       textTransform="uppercase"
+      fontSize={['6xl', '6xl', '6xl', '7xl']}
+      lineHeight={['4xl', '4xl', '4xl', '5xl']}
     >
       benefits to {<br />} real-world applications
     </Typography>

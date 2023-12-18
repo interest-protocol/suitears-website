@@ -7,15 +7,14 @@ import { DAOSVG, FarmingSVG } from './illustration/illustration-svg';
 
 const BenefitGroupCard: FC = () => (
   <Box
-    flexDirection="column"
-    display={['flex', 'flex', 'flex', 'grid']}
-    gap="1.5rem"
-    gridTemplateColumns="repeat(3, 1fr)"
+    gap="l"
+    display="grid"
+    gridTemplateColumns={['1fr', '1fr', '1fr 1fr', 'repeat(3, 1fr)']}
   >
     <BenefitsCard
       title="Airdrop"
       Icon={
-        <Box width="100%" position="relative" height="20rem" my="1rem">
+        <Box width="100%" position="relative" height="20rem" my="m">
           <CoinsIllustration />
         </Box>
       }

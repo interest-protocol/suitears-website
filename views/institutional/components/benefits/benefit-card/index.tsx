@@ -8,21 +8,22 @@ const BenefitCard: FC<BenefitCardProps> = ({ title, description, Icon }) => {
 
   return (
     <Box
-      p="2.5rem"
+      p="3xl"
       display="flex"
       minHeight="27rem"
+      border="2px solid"
       borderRadius="2rem"
       flexDirection="column"
+      borderColor="onPrimary"
       justifyContent="space-between"
-      border={`2px solid ${theme.colors.onPrimary}`}
       background={`linear-gradient(36deg, ${theme.colors.onPrimary} 2.01%, rgba(255, 255, 255, 0.16) 98.41%)`}
     >
       <Typography
-        variant="title"
         size="medium"
-        fontSize="2rem"
+        fontSize="5xl"
+        variant="title"
         fontWeight="700"
-        lineHeight="2.5rem"
+        lineHeight="3xl"
       >
         {title}
       </Typography>
