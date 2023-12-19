@@ -42,6 +42,7 @@ const Proven: FC = () => (
           size="large"
           variant="body"
           fontWeight="500"
+          color="onSurface"
           fontStyle="normal"
           textAlign="center"
           lineHeight="1.5rem"
