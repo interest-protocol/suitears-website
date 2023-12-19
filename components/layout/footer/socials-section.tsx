@@ -3,16 +3,9 @@ import { Box, Typography } from '@interest-protocol/ui-kit';
 import { DiscordSVG, GithubSVG, TelegramSVG, XSVG } from '@/components/svg';
 const SocialSection = () => (
   <Box my="2xl">
-    <Box fontFamily="Proto">
-      <Typography
-        size="medium"
-        variant="body"
-        fontFamily="Proto"
-        textAlign="center"
-      >
-        Follow us
-      </Typography>
-    </Box>
+    <Typography size="large" variant="label" textAlign="center">
+      Follow us
+    </Typography>
     <Box display="flex" gap="xs" justifyContent="center" mt="s">
       <a
         href="https://discord.gg/interestprotocol"

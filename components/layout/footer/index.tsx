@@ -7,45 +7,30 @@ import SocialSection from './socials-section';
 
 const Footer: FC = () => (
   <Box
-    pr="s"
-    pb="xl"
-    pl="xs"
-    pt="8xl"
     fontSize="s"
     display="flex"
-    fontFamily="Proto"
-    alignItems="center"
     flexDirection="column"
     textTransform="uppercase"
   >
-    <Box textAlign="center" mb="l" maxWidth="96%" minWidth="90rem">
-      <Typography
-        size="medium"
-        variant="body"
-        fontWeight="500"
-        fontFamily="Proto"
-      >
+    <Box textAlign="center" mb="l">
+      <Typography size="large" variant="label" fontWeight="500">
         This DApp is maintained &
       </Typography>
       <Typography
         gap="0.25rem"
-        size="medium"
+        size="large"
         display="flex"
-        variant="body"
-        fontFamily="Proto"
+        variant="label"
         justifyContent="center"
       >
         built with
-        <Typography size="medium" variant="body" color="error">
-          <HeartSVG width="100%" maxWidth="1.125rem" maxHeight="1.125rem" />
-        </Typography>
+        <HeartSVG width="100%" maxWidth="1.125rem" maxHeight="1.125rem" />
         By Interest Protocol
       </Typography>
     </Box>
     <SocialSection />
     <Box
       py="m"
-      width="100%"
       display="flex"
       color="primary"
       borderTop="1px solid"
