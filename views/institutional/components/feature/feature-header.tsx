@@ -29,7 +29,7 @@ const FeatureHeader: FC = () => (
     >
       Seamless {<br />} Integration
     </Typography>
-    <Typography variant="body" size="large" textAlign="center">
+    <Typography variant="body" size="large" textAlign="center" p="s">
       Suitears is designed for ease of integration.{<br />}
       Let&apos;s walkthrough on how to implement a DAO in 4 steps.
     </Typography>
