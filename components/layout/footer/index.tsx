@@ -20,23 +20,25 @@ const Footer: FC = () => (
   >
     <Box textAlign="center" mb="l" maxWidth="96%" minWidth="90rem">
       <Typography
-        size={'medium'}
+        size="medium"
+        variant="body"
         fontWeight="500"
-        variant={'body'}
         fontFamily="Proto"
       >
         This DApp is maintained &
       </Typography>
       <Typography
         gap="0.25rem"
+        size="medium"
         display="flex"
-        size={'medium'}
-        variant={'body'}
+        variant="body"
         fontFamily="Proto"
         justifyContent="center"
       >
         built with
-        <HeartSVG maxHeight="1.125rem" maxWidth="1.125rem" width="100%" />
+        <Typography size="medium" variant="body" color="error">
+          <HeartSVG width="100%" maxWidth="1.125rem" maxHeight="1.125rem" />
+        </Typography>
         By Interest Protocol
       </Typography>
     </Box>
@@ -45,6 +47,7 @@ const Footer: FC = () => (
       py="m"
       width="100%"
       display="flex"
+      color="primary"
       borderTop="1px solid"
       justifyContent="center"
       borderColor="outlineVariant"

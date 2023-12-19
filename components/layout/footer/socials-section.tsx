@@ -5,9 +5,8 @@ const SocialSection = () => (
   <Box my="2xl">
     <Box fontFamily="Proto">
       <Typography
-        size={'medium'}
-        variant={'body'}
-        fontWeight="500"
+        size="medium"
+        variant="body"
         fontFamily="Proto"
         textAlign="center"
       >
