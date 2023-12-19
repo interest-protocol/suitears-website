@@ -4,7 +4,7 @@ import { FC } from 'react';
 const FeatureHeader: FC = () => (
   <Box
     mt="2xl"
-    py={['2rem', '2rem', '2rem', '4rem']}
+    py={['3xl', '3xl', '3xl', '4rem']}
     mx="auto"
     width={['100%', '100%', '100%', '40rem']}
     display="flex"

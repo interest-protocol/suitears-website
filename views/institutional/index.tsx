@@ -2,8 +2,7 @@ import { FC } from 'react';
 
 import Layout from '@/components/layout';
 
-import Feature from './components/feature/index';
-import { Benefits, Hero } from './components';
+import { Benefits, Feature, Hero } from './components';
 
 const Landing: FC = () => (
   <Layout>
