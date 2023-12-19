@@ -46,7 +46,6 @@ const Proven: FC = () => (
           fontStyle="normal"
           textAlign="center"
           lineHeight="1.5rem"
-          fontFamily="Satoshi"
         >
           {`Our team has a track record of successfully deploying and managing an
           Audited DEX on Sui's mainnet, as well as ranking highly on different

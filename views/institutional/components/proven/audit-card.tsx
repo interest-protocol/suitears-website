@@ -55,11 +55,9 @@ const AuditCard: FC = () => {
           <Typography
             size="large"
             variant="body"
-            fontWeight="500"
             fontStyle="normal"
             lineHeight="1.5rem"
             color="#000000B8"
-            fontFamily="Satoshi"
             textAlign={['center', 'center', 'start']}
           >
             MOVEBIT, a third-party blockchain security company focused on Move
@@ -87,13 +85,7 @@ const AuditCard: FC = () => {
       </Box>
 
       <Box>
-        <Tag
-          px={0}
-          py="0.25rem"
-          size="medium"
-          variant="outline"
-          fontFamily="Proto"
-        >
+        <Tag px="0" py="0.25rem" size="medium" variant="outline">
           <Typography variant="body" size="medium" fontFamily="Proto">
             Audited
           </Typography>
