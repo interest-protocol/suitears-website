@@ -1,6 +1,14 @@
 import { Box } from '@interest-protocol/ui-kit';
 import { FC } from 'react';
 
+import {
+  MoveDaoSourceSVG,
+  MoveDaoSVG,
+  MoveTomlSVG,
+  MyMoveDaoSVG,
+} from '@/components/svg';
+
+import FeatureCard from './feature-card';
 import FeatureDescription from './feature-description';
 import FeatureHeader from './feature-header';
 
@@ -13,24 +21,42 @@ const Feature: FC = () => (
     alignItems="center"
   >
     <FeatureHeader />
-    <Box
-      width={['100%', '100%', '100%', '75rem']}
-      height={['80vh', '80vh', '80vh', '80%']}
-      display="flex"
-      alignItems="center"
-      flexDirection="column"
-      justifyContent="center"
-    >
-      <Box
-        height={['70vh', '70vh', '70vh', '100%']}
-        width={['100%', '100%', '100%', '100%']}
-        overflow="hidden"
-        bg="url(/img/features.webp)"
-        backgroundPosition="bottom center"
-        backgroundSize="100%"
-        backgroundRepeat="no-repeat"
-      ></Box>
-    </Box>
+    <FeatureCard
+      number={1}
+      description="Add the following snippet in your Move.toml file"
+      icon={<MoveTomlSVG maxWidth="39.938rem" width="100%" maxHeight="15rem" />}
+      toRevert={false}
+    />
+    <FeatureCard
+      number={2}
+      description="Find and copy the name of the DAO module."
+      icon={
+        <MoveDaoSVG maxWidth="42.063rem" width="100%" maxHeight="19.25rem" />
+      }
+      toRevert
+    />
+    <FeatureCard
+      number={3}
+      description="Import the DAO module"
+      isCentered
+      icon={
+        <MoveDaoSourceSVG
+          maxWidth="42.438rem"
+          width="100%"
+          maxHeight="26.563rem"
+        />
+      }
+      toRevert={false}
+    />
+    <FeatureCard
+      number={4}
+      description="Create a DAO with one function call"
+      icon={
+        <MyMoveDaoSVG maxWidth="43.938rem" width="100%" maxHeight="28.438rem" />
+      }
+      toRevert
+      isCentered
+    />
     <FeatureDescription />
   </Box>
 );
