@@ -1,4 +1,10 @@
-import { Box, Motion } from '@interest-protocol/ui-kit';
+import {
+  Box,
+  Motion,
+  Theme,
+  Typography,
+  useTheme,
+} from '@interest-protocol/ui-kit';
 import { FC, PropsWithChildren } from 'react';
 
 import { CircleSVG } from '../svg';
@@ -20,41 +26,35 @@ const OptionItem: FC<PropsWithChildren<OptionItemProps>> = ({
   selected,
   mobileOnly,
   withBorderTop,
-}) => (
-  <Motion
-    p="m"
-    onClick={onClick}
-    alignItems="center"
-    borderTop="1px solid"
-    variants={itemVariants}
-    initial={itemVariants.closed}
-    justifyContent="space-between"
-    cursor={disabled ? 'not-allowed' : 'pointer'}
-    bg={selected ? 'rgba(0, 83, 219, 0.08)' : 'unset'}
-    borderColor={withBorderTop ? 'outlineVariant' : 'transparent'}
-    display={mobileOnly ? ['flex', 'flex', 'flex', 'none'] : 'flex'}
-    nHover={{
-      bg: disabled ? 'unset' : 'rgba(0, 83, 219, 0.08)',
-    }}
-  >
-    <Box
-      gap="m"
-      width="100%"
-      display="flex"
-      fontWeight="500"
-      color="onSurface"
+}) => {
+  const { colors } = useTheme() as Theme;
+  return (
+    <Motion
+      p="m"
+      onClick={onClick}
       alignItems="center"
-      padding="xs"
-      fontFamily="Satoshi !important"
+      borderTop="1px solid"
+      variants={itemVariants}
+      initial={itemVariants.closed}
+      justifyContent="space-between"
+      cursor={disabled ? 'not-allowed' : 'pointer'}
+      bg={selected ? 'rgba(0, 83, 219, 0.08)' : 'unset'}
+      borderColor={withBorderTop ? 'outlineVariant' : 'transparent'}
+      display={mobileOnly ? ['flex', 'flex', 'flex', 'none'] : 'flex'}
+      nHover={{
+        bg: disabled ? 'unset' : `${colors.primary}14`,
+      }}
     >
-      {children}
-    </Box>
-    {selected && (
-      <Box color="primary">
-        <CircleSVG maxWidth="1.5rem" maxHeight="1.5rem" width="100%" />
-      </Box>
-    )}
-  </Motion>
-);
+      <Typography variant="body" size="large">
+        {children}
+      </Typography>
+      {selected && (
+        <Box color="primary">
+          <CircleSVG maxWidth="1.5rem" maxHeight="1.5rem" width="100%" />
+        </Box>
+      )}
+    </Motion>
+  );
+};
 
 export default OptionItem;

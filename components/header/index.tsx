@@ -1,18 +1,11 @@
 import { Box, Button } from '@interest-protocol/ui-kit';
-import { FC, useState } from 'react';
-
-import useEventListener from '@/hooks/use-event-listener';
+import { FC } from 'react';
 
 import Menu from '../menu';
-import MenuOptions from '../menu-options';
 import Navbar from '../navbar';
 import { LogoSVG } from '../svg';
 
 const Header: FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEventListener('resize', () => setIsMenuOpen(false), true);
-
   const gotoRepo = () =>
     window.open('https://github.com/interest-protocol/suitears', '_blank');
 
@@ -30,8 +23,6 @@ const Header: FC = () => {
       bg="rgba(255, 255, 255, 0.48)"
       border="1px solid outlineVariant"
     >
-      {isMenuOpen}
-
       <LogoSVG maxWidth="100%" maxHeight="2.5rem" height="100%" />
       <Navbar />
       <Button
@@ -42,11 +33,7 @@ const Header: FC = () => {
       >
         Get started
       </Button>
-      <Menu onClick={() => setIsMenuOpen(!isMenuOpen)} />
-      <MenuOptions
-        onOutsideClick={() => setIsMenuOpen(false)}
-        isMenuOpen={isMenuOpen}
-      />
+      <Menu />
     </Box>
   );
 };

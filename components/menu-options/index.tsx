@@ -24,10 +24,10 @@ const MenuOptions: FC<PropsWithRef<MenuOptionsProps>> = ({
       top="5rem"
       width="14.5rem"
       initial="closed"
+      borderRadius="s"
       ref={dropDownRef}
       border="1px solid"
       position="absolute"
-      borderRadius="1rem"
       bg="lowestContainer"
       variants={wrapperVariants}
       textTransform="capitalize"
@@ -39,14 +39,15 @@ const MenuOptions: FC<PropsWithRef<MenuOptionsProps>> = ({
       <>
         <Box
           px="m"
+          display="flex"
           py="0.625rem"
           gap="0.625rem"
-          display="flex"
           alignItems="center"
-          borderBottom="0.063rem solid #C6C6CA"
+          borderBottom="0.063rem solid"
+          borderBottomColor="outlineVariant"
         >
           <AvatarSVG maxHeight="2rem" maxWidth="2rem" width="100%" />
-          <Typography variant="body" size="medium">
+          <Typography variant="body" size="medium" color="#0D1017">
             {accountInfo}
           </Typography>
         </Box>
@@ -60,10 +61,13 @@ const MenuOptions: FC<PropsWithRef<MenuOptionsProps>> = ({
           height="3.5rem"
           alignItems="center"
           justifyContent="center"
-          borderTop="0.063rem solid #C6C6CA"
+          borderTop="0.063rem solid"
+          borderTopColor="outlineVariant"
         >
-          <Button variant="filled" padding="0.625rem 1.5rem">
-            Get Started
+          <Button variant="filled" py="0.625rem" px="xl">
+            <Typography variant="label" size="large">
+              Get Started
+            </Typography>
           </Button>
         </Box>
       </>
