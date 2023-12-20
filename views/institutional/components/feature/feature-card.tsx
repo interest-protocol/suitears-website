@@ -21,6 +21,7 @@ const FeatureCard: FC<FeatureCardProps> = ({
     ]}
     alignItems={isCentered ? 'center' : 'flex-end'}
     justifyContent="center"
+    mb="m"
   >
     <Box
       width={['75%', '75%', '75%', '16.5rem']}
@@ -62,7 +63,7 @@ const FeatureCard: FC<FeatureCardProps> = ({
         size="large"
         variant="body"
         color="outline"
-        width={['70%', '70%', '70%', '75rem']}
+        width={['70%', '70%', '70%', '98%']}
         textAlign={['center', 'center', 'center', toRevert ? 'left' : 'right']}
       >
         {description}

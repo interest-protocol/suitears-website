@@ -4,7 +4,7 @@ import { FC } from 'react';
 const FeatureHeader: FC = () => (
   <Box
     mt="2xl"
-    py={['3xl', '3xl', '3xl', '4rem']}
+    py={['3xl', '3xl', '3xl', '8xl']}
     mx="auto"
     width={['100%', '100%', '100%', '40rem']}
     display="flex"
@@ -17,14 +17,12 @@ const FeatureHeader: FC = () => (
     </Tag>
     <Typography
       size="large"
-      mb="m"
       variant="title"
       fontWeight="700"
       fontStyle="normal"
       textAlign="center"
       fontSize="7xl"
       lineHeight="5xl"
-      fontFamily="Satoshi"
       textTransform="uppercase"
     >
       Seamless {<br />} Integration

@@ -30,9 +30,7 @@ const Feature: FC = () => (
     <FeatureCard
       number={2}
       description="Find and copy the name of the DAO module."
-      icon={
-        <MoveDaoSVG maxWidth="42.063rem" width="100%" maxHeight="19.25rem" />
-      }
+      icon={<MoveDaoSVG maxWidth="42.063rem" width="100%" />}
       toRevert
     />
     <FeatureCard
