@@ -18,10 +18,10 @@ const Header: FC = () => {
       px={['l', '8xl']}
       py={['l', '2xl']}
       alignItems="center"
+      borderColor="outlineVariant"
       justifyContent="space-between"
       bg="rgba(255, 255, 255, 0.48)"
       border="1px solid outlineVariant"
-      borderColor="outlineVariant"
     >
       <LogoSVG maxWidth="100%" maxHeight="2.5rem" height="100%" />
       <Navbar />
