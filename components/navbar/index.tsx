@@ -11,7 +11,7 @@ const Navbar: FC = () => (
     borderRadius="full"
     alignItems="center"
     bg="lowestContainer"
-    display={['none', 'flex']}
+    display={['none', 'none', 'none', 'flex']}
   >
     {MENU_ITEMS.map(({ name }, index) => (
       <NavbarItem name={name} index={index} key={index} />
