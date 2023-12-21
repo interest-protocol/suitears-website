@@ -2,6 +2,7 @@ import { Box } from '@interest-protocol/ui-kit';
 import { FC, PropsWithChildren } from 'react';
 
 import Header from '../header';
+import Footer from './footer';
 
 const Layout: FC<PropsWithChildren> = ({ children }) => (
   <Box
@@ -13,6 +14,7 @@ const Layout: FC<PropsWithChildren> = ({ children }) => (
   >
     <Header />
     {children}
+    <Footer />
   </Box>
 );
 
