@@ -12,6 +12,7 @@ const Header: FC = () => {
   return (
     <Box
       top="0"
+      zIndex={1}
       width="100vw"
       display="flex"
       position="fixed"
