@@ -26,7 +26,7 @@ const BenefitHeader: FC = () => (
       fontSize={['6xl', '6xl', '6xl', '7xl']}
       lineHeight={['4xl', '4xl', '4xl', '5xl']}
     >
-      benefits to {<br />} real-world applications
+      benefits to <br /> real-world applications
     </Typography>
     <Typography variant="body" size="large" textAlign="center">
       Suitears encompasses a comprehensive suite of smart contracts, ranging
