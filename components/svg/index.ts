@@ -1,8 +1,16 @@
+export { default as ArrowRightSVG } from './arrow-right';
+export { default as AvatarSVG } from './avatar';
 export { default as BarsSVG } from './bars';
+export { default as CircleSVG } from './circle';
 export { default as DiscordSVG } from './discord';
 export { default as GithubSVG } from './github';
 export { default as HeartSVG } from './heart';
 export { default as IPXSVG } from './ipx';
 export { default as LogoSVG } from './logo';
+export { default as MoveBitSVG } from './move-bit';
+export { default as MoveDaoSVG } from './move-dao';
+export { default as MoveDaoSourceSVG } from './move-dao-source';
+export { default as MoveTomlSVG } from './move-toml';
+export { default as MyMoveDaoSVG } from './my-move-dao';
 export { default as TelegramSVG } from './telegram';
 export { default as XSVG } from './x';

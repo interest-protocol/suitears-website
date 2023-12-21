@@ -9,8 +9,8 @@ dependencies:
     specifier: ^11.11.1
     version: 11.11.1(@types/react@18.2.38)(react@18.2.0)
   '@interest-protocol/ui-kit':
-    specifier: 0.2.2-alpha
-    version: 0.2.2-alpha(@types/react@18.2.38)
+    specifier: ^0.2.10-alpha
+    version: 0.2.10-alpha(@types/react@18.2.38)
   '@stylin.js/react':
     specifier: 1.0.5-alpha.0
     version: 1.0.5-alpha.0(@types/react@18.2.38)(react@18.2.0)
@@ -525,8 +525,8 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@interest-protocol/ui-kit@0.2.2-alpha(@types/react@18.2.38):
-    resolution: {integrity: sha512-GUiZ4Bxv8mXtExtAxv1vPtvk8GcxU5t8GYIDrxmXyl2z+IxKlE/GdlWgtHuL3dl94FONWuM5FL+aJgq3IT2jDA==}
+  /@interest-protocol/ui-kit@0.2.10-alpha(@types/react@18.2.38):
+    resolution: {integrity: sha512-XYsjqYMWYGBg0ICwIfNJbwov24wbgBVVJCJEqiy6845RuF/rLXeyo8xlSt/TxrLEB+c7hgN1qisxLJTABh7yxg==}
     dependencies:
       '@emotion/react': 11.11.1(@types/react@18.2.38)(react@18.2.0)
       '@stylin.js/react': 1.0.3(@types/react@18.2.38)(react@18.2.0)
