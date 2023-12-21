@@ -11,7 +11,6 @@ const FeatureDescription: FC = () => (
     <Typography
       textAlign="center"
       as="h1"
-      whiteSpace="wrap"
       fontSize={['6xl', '8xl']}
       fontWeight="900"
       lineHeight="6xl"
