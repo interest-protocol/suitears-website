@@ -14,11 +14,10 @@ import FeatureHeader from './feature-header';
 
 const Feature: FC = () => (
   <Box
-    height={['260vh', '260vh', '260vh', '310vh']}
     display="flex"
+    alignItems="center"
     flexDirection="column"
     justifyContent="center"
-    alignItems="center"
   >
     <FeatureHeader />
     <FeatureCard

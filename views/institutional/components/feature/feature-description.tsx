@@ -19,7 +19,7 @@ const FeatureDescription: FC = () => (
       size="large"
       variant="body"
     >
-      Easy peasy {<br />}& fun
+      Easy peasy <br />& fun
     </Typography>
     <Button textTransform="uppercase" my="5xl" variant="filled">
       Get started
