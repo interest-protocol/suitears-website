@@ -26,9 +26,9 @@ const Header: FC = () => {
       <LogoSVG maxWidth="100%" maxHeight="2.5rem" height="100%" />
       <Navbar />
       <Button
+        py="m"
         variant="filled"
         onClick={gotoRepo}
-        py="m"
         display={['none', 'flex']}
       >
         Get started
