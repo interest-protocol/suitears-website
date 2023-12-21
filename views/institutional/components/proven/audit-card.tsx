@@ -85,7 +85,7 @@ const AuditCard: FC = () => {
       </Box>
       <Box>
         <Tag px="0" py="0.25rem" size="medium" variant="outline">
-          <Typography variant="body" size="medium" fontFamily="Proto">
+          <Typography variant="body" size="medium" fontFamily="Proto" as="span">
             Audited
           </Typography>
         </Tag>

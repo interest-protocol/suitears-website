@@ -12,11 +12,12 @@ const Header: FC = () => {
   return (
     <Box
       top="0"
+      zIndex={1}
       width="100vw"
       display="flex"
       position="fixed"
-      px={['l', '8xl']}
-      py={['l', '2xl']}
+      px={['l', 'l', 'l', '8xl']}
+      py={['l', 'l', 'l', '2xl']}
       alignItems="center"
       borderColor="outlineVariant"
       justifyContent="space-between"
@@ -29,7 +30,7 @@ const Header: FC = () => {
         py="m"
         variant="filled"
         onClick={gotoRepo}
-        display={['none', 'flex']}
+        display={['none', 'none', 'none', 'flex']}
       >
         Get started
       </Button>

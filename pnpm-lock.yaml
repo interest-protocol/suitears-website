@@ -525,8 +525,13 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
+<<<<<<< HEAD
+  /@interest-protocol/ui-kit@0.2.9-alpha(@types/react@18.2.38):
+    resolution: {integrity: sha512-MgSK8aEj9VFR4X2lDN5NTOlD0mRaTir1niIeIN1rxkle9W6iDf5BYHvpTuwVaNjUfpBRi5nt3mFLdDveO8x4YA==}
+=======
   /@interest-protocol/ui-kit@0.2.10-alpha(@types/react@18.2.38):
     resolution: {integrity: sha512-XYsjqYMWYGBg0ICwIfNJbwov24wbgBVVJCJEqiy6845RuF/rLXeyo8xlSt/TxrLEB+c7hgN1qisxLJTABh7yxg==}
+>>>>>>> dccc31099f43c7ac8de9bf6db2ab6a4b8efb650e
     dependencies:
       '@emotion/react': 11.11.1(@types/react@18.2.38)(react@18.2.0)
       '@stylin.js/react': 1.0.3(@types/react@18.2.38)(react@18.2.0)
