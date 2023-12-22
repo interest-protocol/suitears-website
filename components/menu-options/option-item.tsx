@@ -5,6 +5,7 @@ import {
   Typography,
   useTheme,
 } from '@interest-protocol/ui-kit';
+import Link from 'next/link';
 import { FC, PropsWithChildren } from 'react';
 
 import { CircleSVG } from '../svg';
@@ -30,11 +31,7 @@ const OptionItem: FC<PropsWithChildren<OptionItemProps>> = ({
   const { colors } = useTheme() as Theme;
 
   return (
-    <a
-      href={path}
-      target={path.startsWith('#') ? '_self' : '_blank'}
-      rel={path.startsWith('#') ? undefined : 'noreferrer'}
-    >
+    <Link href={path}>
       <Motion
         p="m"
         alignItems="center"
@@ -57,7 +54,7 @@ const OptionItem: FC<PropsWithChildren<OptionItemProps>> = ({
           </Box>
         )}
       </Motion>
-    </a>
+    </Link>
   );
 };
 
