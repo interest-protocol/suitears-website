@@ -4,6 +4,7 @@ import { NextPage } from 'next';
 const DocsPage: NextPage = () => (
   <Box
     as="iframe"
+    border="none"
     width="100vw"
     height="100vh"
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
