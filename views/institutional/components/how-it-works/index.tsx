@@ -8,31 +8,33 @@ import {
   MyMoveDaoSVG,
 } from '@/components/svg';
 
-import FeatureCard from './feature-card';
-import FeatureDescription from './feature-description';
-import FeatureHeader from './feature-header';
+import HowItWorksCard from './how-it-works-card';
+import HowItWorksDescription from './how-it-works-description';
+import HowItWorksHeader from './how-it-works-header';
 
-const Feature: FC = () => (
+const HowItWorks: FC = () => (
   <Box
+    pt="8xl"
     display="flex"
+    id="how-it-works"
     alignItems="center"
     flexDirection="column"
     justifyContent="center"
   >
-    <FeatureHeader />
-    <FeatureCard
+    <HowItWorksHeader />
+    <HowItWorksCard
       number={1}
       description="Add the following snippet in your Move.toml file"
       icon={<MoveTomlSVG maxWidth="39.938rem" width="100%" maxHeight="15rem" />}
       toRevert={false}
     />
-    <FeatureCard
+    <HowItWorksCard
       number={2}
       description="Find and copy the name of the DAO module."
       icon={<MoveDaoSVG maxWidth="42.063rem" maxHeight="24rem" width="100%" />}
       toRevert
     />
-    <FeatureCard
+    <HowItWorksCard
       number={3}
       description="Import the DAO module"
       isCentered
@@ -45,7 +47,7 @@ const Feature: FC = () => (
       }
       toRevert={false}
     />
-    <FeatureCard
+    <HowItWorksCard
       number={4}
       description="Create a DAO with one function call"
       icon={
@@ -54,8 +56,8 @@ const Feature: FC = () => (
       toRevert
       isCentered
     />
-    <FeatureDescription />
+    <HowItWorksDescription />
   </Box>
 );
 
-export default Feature;
+export default HowItWorks;

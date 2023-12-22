@@ -1,7 +1,7 @@
 import { Box, Tag, Typography } from '@interest-protocol/ui-kit';
 import { FC } from 'react';
 
-const FeatureHeader: FC = () => (
+const HowItWorksHeader: FC = () => (
   <Box
     mt="2xl"
     py={['3xl', '3xl', '3xl', '8xl']}
@@ -35,4 +35,4 @@ const FeatureHeader: FC = () => (
   </Box>
 );
 
-export default FeatureHeader;
+export default HowItWorksHeader;

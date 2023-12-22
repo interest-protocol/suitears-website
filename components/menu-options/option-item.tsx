@@ -20,7 +20,7 @@ const itemVariants = {
 };
 
 const OptionItem: FC<PropsWithChildren<OptionItemProps>> = ({
-  onClick,
+  path,
   disabled,
   children,
   selected,
@@ -28,32 +28,36 @@ const OptionItem: FC<PropsWithChildren<OptionItemProps>> = ({
   withBorderTop,
 }) => {
   const { colors } = useTheme() as Theme;
+
   return (
-    <Motion
-      p="m"
-      onClick={onClick}
-      alignItems="center"
-      borderTop="1px solid"
-      variants={itemVariants}
-      initial={itemVariants.closed}
-      justifyContent="space-between"
-      cursor={disabled ? 'not-allowed' : 'pointer'}
-      bg={selected ? 'rgba(0, 83, 219, 0.08)' : 'unset'}
-      borderColor={withBorderTop ? 'outlineVariant' : 'transparent'}
-      display={mobileOnly ? ['flex', 'flex', 'flex', 'none'] : 'flex'}
-      nHover={{
-        bg: disabled ? 'unset' : `${colors.primary}14`,
-      }}
+    <a
+      href={path}
+      target={path.startsWith('#') ? '_self' : '_blank'}
+      rel={path.startsWith('#') ? undefined : 'noreferrer'}
     >
-      <Typography variant="body" size="large">
-        {children}
-      </Typography>
-      {selected && (
-        <Box color="primary">
-          <CircleSVG maxWidth="1.5rem" maxHeight="1.5rem" width="100%" />
-        </Box>
-      )}
-    </Motion>
+      <Motion
+        p="m"
+        alignItems="center"
+        borderTop="1px solid"
+        variants={itemVariants}
+        initial={itemVariants.closed}
+        justifyContent="space-between"
+        cursor={disabled ? 'not-allowed' : 'pointer'}
+        bg={selected ? 'rgba(0, 83, 219, 0.08)' : 'unset'}
+        nHover={{ bg: disabled ? 'unset' : `${colors.primary}14` }}
+        borderColor={withBorderTop ? 'outlineVariant' : 'transparent'}
+        display={mobileOnly ? ['flex', 'flex', 'flex', 'flex', 'none'] : 'flex'}
+      >
+        <Typography variant="body" size="large">
+          {children}
+        </Typography>
+        {selected && (
+          <Box color="primary">
+            <CircleSVG maxWidth="1.5rem" maxHeight="1.5rem" width="100%" />
+          </Box>
+        )}
+      </Motion>
+    </a>
   );
 };
 

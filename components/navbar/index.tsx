@@ -11,10 +11,10 @@ const Navbar: FC = () => (
     borderRadius="full"
     alignItems="center"
     bg="lowestContainer"
-    display={['none', 'none', 'none', 'flex']}
+    display={['none', 'none', 'none', 'none', 'flex']}
   >
-    {MENU_ITEMS.map(({ name }, index) => (
-      <NavbarItem name={name} index={index} key={index} />
+    {MENU_ITEMS.map(({ name, path }, index) => (
+      <NavbarItem name={name} path={path} index={index} key={index} />
     ))}
   </Box>
 );

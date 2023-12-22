@@ -1,9 +1,9 @@
 import { Box, Typography } from '@interest-protocol/ui-kit';
 import { FC } from 'react';
 
-import { FeatureCardProps } from './feature.types';
+import { HowItWorksCardProps } from './how-it-works.types';
 
-const FeatureCard: FC<FeatureCardProps> = ({
+const HowItWorksCard: FC<HowItWorksCardProps> = ({
   number,
   description,
   isCentered,
@@ -72,4 +72,4 @@ const FeatureCard: FC<FeatureCardProps> = ({
     {icon}
   </Box>
 );
-export default FeatureCard;
+export default HowItWorksCard;

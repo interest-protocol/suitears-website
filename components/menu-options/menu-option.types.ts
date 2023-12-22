@@ -1,7 +1,7 @@
 export interface OptionItemProps {
+  path: string;
   selected?: boolean;
   disabled?: boolean;
-  onClick?: () => void;
   mobileOnly?: boolean;
   withSubmenu?: boolean;
   withBorderTop?: boolean;

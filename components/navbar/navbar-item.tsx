@@ -3,7 +3,7 @@ import { FC } from 'react';
 
 import { NavbarItemProps } from './navbar.types';
 
-const NavbarItem: FC<NavbarItemProps> = ({ name, index }) => (
+const NavbarItem: FC<NavbarItemProps> = ({ name, path, index }) => (
   <>
     {!!index && (
       <Box
@@ -13,7 +13,13 @@ const NavbarItem: FC<NavbarItemProps> = ({ name, index }) => (
         borderRadius="full"
       />
     )}
-    <Button variant="text">{name}</Button>
+    <a
+      href={path}
+      target={path.startsWith('#') ? '_self' : '_blank'}
+      rel={path.startsWith('#') ? undefined : 'noreferrer'}
+    >
+      <Button variant="text">{name}</Button>
+    </a>
   </>
 );
 
