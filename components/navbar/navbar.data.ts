@@ -1,3 +1,5 @@
+import { Routes, RoutesEnum } from '@/constants/routes';
+
 export const MENU_ITEMS = [
   {
     name: 'Features',
@@ -13,6 +15,6 @@ export const MENU_ITEMS = [
   },
   {
     name: 'Documentation',
-    path: 'https://docs.interestprotocol.com/overview/sui-tears',
+    path: Routes[RoutesEnum.Docs],
   },
 ];

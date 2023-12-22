@@ -1,4 +1,5 @@
 import { Box, Button } from '@interest-protocol/ui-kit';
+import Link from 'next/link';
 import { FC } from 'react';
 
 import { NavbarItemProps } from './navbar.types';
@@ -13,13 +14,9 @@ const NavbarItem: FC<NavbarItemProps> = ({ name, path, index }) => (
         borderRadius="full"
       />
     )}
-    <a
-      href={path}
-      target={path.startsWith('#') ? '_self' : '_blank'}
-      rel={path.startsWith('#') ? undefined : 'noreferrer'}
-    >
+    <Link href={path}>
       <Button variant="text">{name}</Button>
-    </a>
+    </Link>
   </>
 );
 
