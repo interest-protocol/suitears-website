@@ -6,8 +6,11 @@ import Navbar from '../navbar';
 import { LogoSVG } from '../svg';
 
 const Header: FC = () => {
-  const gotoRepo = () =>
-    window.open('https://github.com/interest-protocol/suitears', '_blank');
+  const gotoDocs = () =>
+    window.open(
+      'https://docs.interestprotocol.com/overview/sui-tears',
+      '_blank'
+    );
 
   return (
     <Box
@@ -16,12 +19,12 @@ const Header: FC = () => {
       width="100vw"
       display="flex"
       position="fixed"
-      px={['l', 'l', 'l', '8xl']}
-      py={['l', 'l', 'l', '2xl']}
       alignItems="center"
       borderColor="outlineVariant"
       justifyContent="space-between"
       bg="rgba(255, 255, 255, 0.48)"
+      px={['l', 'l', 'l', 'l', '8xl']}
+      py={['l', 'l', 'l', 'l', '2xl']}
       border="1px solid outlineVariant"
     >
       <LogoSVG maxWidth="100%" maxHeight="2.5rem" height="100%" />
@@ -29,8 +32,8 @@ const Header: FC = () => {
       <Button
         py="m"
         variant="filled"
-        onClick={gotoRepo}
-        display={['none', 'none', 'none', 'flex']}
+        onClick={gotoDocs}
+        display={['none', 'none', 'none', 'none', 'flex']}
       >
         Get started
       </Button>

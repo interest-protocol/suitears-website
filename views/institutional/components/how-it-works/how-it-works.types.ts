@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-export interface FeatureCardProps {
+export interface HowItWorksCardProps {
   number: number;
   description: string;
   isCentered?: boolean;

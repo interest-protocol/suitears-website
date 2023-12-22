@@ -5,7 +5,7 @@ import BenefitGroupCard from './group-card';
 import BenefitHeader from './header';
 
 const Benefits: FC = () => (
-  <Box pb="6rem" px={['l', '8xl']}>
+  <Box pt="8xl" px={['l', '8xl']} id="features">
     <BenefitHeader />
     <BenefitGroupCard />
   </Box>

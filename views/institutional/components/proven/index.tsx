@@ -5,15 +5,15 @@ import AuditCard from './audit-card';
 
 const Proven: FC = () => (
   <Box
+    px="xs"
+    pt="12xl"
+    id="proven"
     as="section"
     display="flex"
     minWidth="100%"
     justifyContent="center"
-    pt="10xl"
-    px="xs"
   >
     <Box
-      pb="11xl"
       gap="8xl"
       width="81rem"
       display="flex"

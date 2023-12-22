@@ -36,41 +36,39 @@ const MenuOptions: FC<PropsWithRef<MenuOptionsProps>> = ({
       pointerEvents={isMenuOpen ? 'auto' : 'none'}
       boxShadow="0px 2px 4px -2px rgba(13, 16, 23, 0.04), 0px 4px 8px -2px rgba(13, 16, 23, 0.12);"
     >
-      <>
-        <Box
-          px="m"
-          display="flex"
-          py="0.625rem"
-          gap="0.625rem"
-          alignItems="center"
-          borderBottom="0.063rem solid"
-          borderBottomColor="outlineVariant"
-        >
-          <AvatarSVG maxHeight="2rem" maxWidth="2rem" width="100%" />
-          <Typography variant="body" size="medium" color="#0D1017">
-            {accountInfo}
+      <Box
+        px="m"
+        display="flex"
+        py="0.625rem"
+        gap="0.625rem"
+        alignItems="center"
+        borderBottom="0.063rem solid"
+        borderBottomColor="outlineVariant"
+      >
+        <AvatarSVG maxHeight="2rem" maxWidth="2rem" width="100%" />
+        <Typography variant="body" size="medium" color="#0D1017">
+          {accountInfo}
+        </Typography>
+      </Box>
+      {MENU_ITEMS.map(({ name, path }, index) => (
+        <OptionItem key={index} mobileOnly path={path}>
+          {name}
+        </OptionItem>
+      ))}
+      <Box
+        display="flex"
+        height="3.5rem"
+        alignItems="center"
+        justifyContent="center"
+        borderTop="0.063rem solid"
+        borderTopColor="outlineVariant"
+      >
+        <Button variant="filled" py="0.625rem" px="xl">
+          <Typography variant="label" size="large">
+            Get Started
           </Typography>
-        </Box>
-        {MENU_ITEMS.map(({ name }, index) => (
-          <OptionItem key={index} mobileOnly>
-            {name}
-          </OptionItem>
-        ))}
-        <Box
-          display="flex"
-          height="3.5rem"
-          alignItems="center"
-          justifyContent="center"
-          borderTop="0.063rem solid"
-          borderTopColor="outlineVariant"
-        >
-          <Button variant="filled" py="0.625rem" px="xl">
-            <Typography variant="label" size="large">
-              Get Started
-            </Typography>
-          </Button>
-        </Box>
-      </>
+        </Button>
+      </Box>
     </Motion>
   );
 };

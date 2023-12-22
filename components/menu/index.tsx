@@ -20,13 +20,10 @@ const Menu: FC = () => {
         alignItems="center"
         border="0.25rem solid"
         transition="all 0.3s ease-in-out"
-        borderColor={isMenuOpen ? 'rgba(0, 83, 219, 0.16)' : 'transparent'}
-        display={['flex', 'flex', 'flex', 'none']}
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        nHover={{
-          bg: 'accent',
-          transform: 'scale(1.15)',
-        }}
+        display={['flex', 'flex', 'flex', 'flex', 'none']}
+        nHover={{ bg: 'accent', transform: 'scale(1.15)' }}
+        borderColor={isMenuOpen ? 'rgba(0, 83, 219, 0.16)' : 'transparent'}
       >
         <Button isIcon variant="text">
           <BarsSVG maxHeight="1rem" maxWidth="1rem" width="100%" />

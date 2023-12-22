@@ -1,18 +1,18 @@
 export const MENU_ITEMS = [
   {
     name: 'Features',
-    path: '',
+    path: '#features',
   },
   {
     name: 'Proven',
-    path: '',
+    path: '#proven',
   },
   {
     name: 'How it works',
-    path: '',
+    path: '#how-it-works',
   },
   {
     name: 'Documentation',
-    path: '',
+    path: 'https://docs.interestprotocol.com/overview/sui-tears',
   },
 ];
