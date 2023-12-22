@@ -30,8 +30,7 @@ const BenefitHeader: FC = () => (
     </Typography>
     <Typography variant="body" size="large" textAlign="center">
       Suitears encompasses a comprehensive suite of smart contracts, ranging
-      from Airdrops, Vesting mechanisms, DAOs, Liquid Staking, Math, and other
-      functionalities.
+      from Airdrops, Vesting mechanisms, DAOs, Math, and other functionalities.
     </Typography>
   </Box>
 );

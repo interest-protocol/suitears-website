@@ -2,6 +2,7 @@ import { Box, Button, Typography } from '@interest-protocol/ui-kit';
 import Link from 'next/link';
 import { FC } from 'react';
 
+import { BookSVG, GithubSVG } from '@/components/svg';
 import { Routes, RoutesEnum } from '@/constants/routes';
 
 import Copy from './copy';
@@ -100,12 +101,25 @@ const Hero: FC = () => (
           Streamlined Development for Move Creators
         </Typography>
         <Link href={Routes[RoutesEnum.Docs]}>
-          <Button textTransform="uppercase" mt="8xl" variant="filled">
+          <Button
+            mt="8xl"
+            variant="filled"
+            SuffixIcon={
+              <BookSVG maxHeight="1rem" maxWidth="1rem" width="100%" />
+            }
+          >
             Documentation
           </Button>
         </Link>
         <a href={Routes[RoutesEnum.Repo]} target="_blank" rel="noreferrer">
-          <Button mt="l" variant="outline" textTransform="uppercase">
+          <Button
+            mt="l"
+            variant="outline"
+            textTransform="uppercase"
+            SuffixIcon={
+              <GithubSVG maxHeight="1rem" maxWidth="1rem" width="100%" />
+            }
+          >
             Get started
           </Button>
         </a>

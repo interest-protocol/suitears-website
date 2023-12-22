@@ -5,7 +5,7 @@ import { Routes, RoutesEnum } from '@/constants/routes';
 
 import Menu from '../menu';
 import Navbar from '../navbar';
-import { LogoSVG } from '../svg';
+import { GithubSVG, LogoSVG } from '../svg';
 
 const Header: FC = () => (
   <Box
@@ -29,6 +29,7 @@ const Header: FC = () => (
         py="m"
         variant="filled"
         display={['none', 'none', 'none', 'none', 'flex']}
+        SuffixIcon={<GithubSVG maxHeight="1rem" maxWidth="1rem" width="100%" />}
       >
         Get started
       </Button>
