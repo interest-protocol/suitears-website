@@ -100,10 +100,15 @@ const Hero: FC = () => (
           Streamlined Development for Move Creators
         </Typography>
         <Link href={Routes[RoutesEnum.Docs]}>
-          <Button textTransform="uppercase" my="8xl" variant="filled">
-            Get started
+          <Button textTransform="uppercase" mt="8xl" variant="filled">
+            Documentation
           </Button>
         </Link>
+        <a href={Routes[RoutesEnum.Repo]} target="_blank" rel="noreferrer">
+          <Button mt="l" variant="outline" textTransform="uppercase">
+            Get started
+          </Button>
+        </a>
       </Box>
     </Box>
   </Box>

@@ -22,13 +22,18 @@ const HowItWorksDescription: FC = () => (
       size="large"
       variant="body"
     >
-      Easy peasy <br />& fun
+      Easy & Secure
     </Typography>
     <Link href={Routes[RoutesEnum.Docs]}>
-      <Button my="5xl" variant="filled" textTransform="uppercase">
-        Get started
+      <Button mt="5xl" variant="filled" textTransform="uppercase">
+        Documentation
       </Button>
     </Link>
+    <a href={Routes[RoutesEnum.Repo]} target="_blank" rel="noreferrer">
+      <Button mt="l" variant="outline" textTransform="uppercase">
+        Get started
+      </Button>
+    </a>
   </Box>
 );
 

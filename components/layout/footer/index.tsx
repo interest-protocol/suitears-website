@@ -7,6 +7,7 @@ import SocialSection from './socials-section';
 
 const Footer: FC = () => (
   <Box
+    mt="10xl"
     display="flex"
     flexDirection="column"
     px={['xl', 'xl', '4xl']}
@@ -14,7 +15,7 @@ const Footer: FC = () => (
   >
     <Box mb="l">
       <Typography textAlign="center" size="large" variant="label">
-        This DApp is maintained &
+        This website is maintained &
       </Typography>
       <Typography
         size="large"

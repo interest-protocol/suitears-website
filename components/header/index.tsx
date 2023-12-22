@@ -1,5 +1,4 @@
 import { Box, Button } from '@interest-protocol/ui-kit';
-import Link from 'next/link';
 import { FC } from 'react';
 
 import { Routes, RoutesEnum } from '@/constants/routes';
@@ -25,7 +24,7 @@ const Header: FC = () => (
   >
     <LogoSVG maxWidth="100%" maxHeight="2.5rem" height="100%" />
     <Navbar />
-    <Link href={Routes[RoutesEnum.Docs]}>
+    <a href={Routes[RoutesEnum.Repo]} target="_blank" rel="noreferrer">
       <Button
         py="m"
         variant="filled"
@@ -33,7 +32,7 @@ const Header: FC = () => (
       >
         Get started
       </Button>
-    </Link>
+    </a>
     <Menu />
   </Box>
 );
