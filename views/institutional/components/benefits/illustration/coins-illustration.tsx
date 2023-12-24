@@ -3,6 +3,7 @@ import { FC } from 'react';
 
 import {
   BottomCoin,
+  DAOUser,
   FarmingBase,
   FarmingCoin,
   FifthCoin,
@@ -112,4 +113,61 @@ export const FarmIllustration: FC = () => (
       <FarmingCoin maxHeight="10rem" maxWidth="10rem" width="100%" />
     </Motion>
   </Box>
+);
+
+export const DAOIllustration: FC = () => (
+  <Motion
+    my="m"
+    width="100%"
+    height="15rem"
+    initial="rest"
+    animate="rest"
+    whileHover="hover"
+    position="relative"
+  >
+    <Motion
+      left="33%"
+      bottom="26%"
+      position="absolute"
+      variants={{
+        rest: { translateY: '0%', translateX: '0%' },
+        hover: { translateX: '-50%' },
+      }}
+    >
+      <DAOUser maxWidth="10rem" maxHeight="10rem" width="100%" />
+    </Motion>
+    <Motion
+      position="absolute"
+      left="20%"
+      bottom="13%"
+      variants={{
+        rest: { translateY: '0%', translateX: '0%' },
+        hover: { translateY: '50%' },
+      }}
+    >
+      <DAOUser maxWidth="10rem" maxHeight="10rem" width="100%" />
+    </Motion>
+    <Motion
+      position="absolute"
+      right="16%"
+      bottom="13%"
+      variants={{
+        rest: { translateY: '0%', translateX: '0%' },
+        hover: { translateY: '-50%' },
+      }}
+    >
+      <DAOUser maxWidth="10rem" maxHeight="10rem" width="100%" />
+    </Motion>
+    <Motion
+      position="absolute"
+      left="33%"
+      bottom="0%"
+      variants={{
+        rest: { translateY: '0%', translateX: '0%' },
+        hover: { translateX: '50%' },
+      }}
+    >
+      <DAOUser maxWidth="10rem" maxHeight="10rem" width="100%" />
+    </Motion>
+  </Motion>
 );

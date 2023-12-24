@@ -4,9 +4,9 @@ import { FC } from 'react';
 import BenefitsCard from './benefit-card';
 import {
   AirdropIllustration,
+  DAOIllustration,
   FarmIllustration,
 } from './illustration/coins-illustration';
-import { DAOSVG } from './illustration/illustration-svg';
 
 const BenefitGroupCard: FC = () => (
   <Box
@@ -27,11 +27,7 @@ const BenefitGroupCard: FC = () => (
     />
     <BenefitsCard
       title="DAO"
-      Icon={
-        <Box mx="auto">
-          <DAOSVG maxHeight="11.6rem" maxWidth="17.5rem" width="100%" />
-        </Box>
-      }
+      Icon={<DAOIllustration />}
       description="Establish decentralized autonomous organizations for community-driven
         decision-making and governance."
     />
