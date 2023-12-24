@@ -1,90 +1,115 @@
-import { Motion } from '@interest-protocol/ui-kit';
+import { Box, Motion } from '@interest-protocol/ui-kit';
 import { FC } from 'react';
 
 import {
   BottomCoin,
+  FarmingBase,
+  FarmingCoin,
   FifthCoin,
   FirstCoin,
   FourthCoin,
   SecondCoin,
   ThirdCoin,
 } from './illustration-svg';
-import { CoinsVariants } from './illustration-variants';
+import { coinsVariants } from './illustration-variants';
 
-const CoinsIllustration: FC = () => (
-  <>
+export const AirdropIllustration: FC = () => (
+  <Box width="100%" position="relative" height="15rem" my="m">
     <Motion
-      maxWidth="4.3125rem"
-      width="100%"
       right="50%"
+      width="100%"
       initial="initial"
       animate="animate"
       position="absolute"
-      variants={CoinsVariants[0]}
+      maxWidth="4.3125rem"
+      variants={coinsVariants()}
     >
       <FirstCoin maxHeight="2.08238rem" maxWidth="3.55825rem" width="100%" />
     </Motion>
     <Motion
-      maxWidth="5.75rem"
-      width="100%"
-      left="38%"
       top="6%"
+      left="38%"
+      width="100%"
       initial="initial"
       animate="animate"
+      maxWidth="5.75rem"
       position="absolute"
-      variants={CoinsVariants[0]}
+      variants={coinsVariants()}
     >
       <SecondCoin maxHeight="2.4615rem" maxWidth="3.65019rem" width="100%" />
     </Motion>
     <Motion
-      maxWidth="5.0625rem"
-      width="100%"
       top="25%"
       left="30%"
+      width="100%"
       initial="initial"
       animate="animate"
       position="absolute"
-      variants={CoinsVariants[1]}
+      maxWidth="5.0625rem"
+      variants={coinsVariants()}
     >
       <ThirdCoin maxHeight="2rem" maxWidth="3.79931rem" width="100%" />
     </Motion>
     <Motion
-      maxWidth="6rem"
-      width="100%"
       top="35%"
       left="38%"
+      width="100%"
+      maxWidth="6rem"
       initial="initial"
       animate="animate"
       position="absolute"
-      variants={CoinsVariants[2]}
+      variants={coinsVariants()}
     >
       <FourthCoin maxHeight="3rem" maxWidth="4.79931rem" width="100%" />
     </Motion>
     <Motion
-      maxWidth="4.3125rem"
-      width="100%"
       top="50%"
       left="35%"
+      width="100%"
       initial="initial"
       animate="animate"
       position="absolute"
-      variants={CoinsVariants[0]}
+      maxWidth="4.3125rem"
+      variants={coinsVariants()}
     >
       <FifthCoin maxHeight="3.6rem" maxWidth="3.6rem" width="100%" />
     </Motion>
-    <Motion
-      maxWidth="7.3125rem"
-      width="100%"
-      bottom="-5%"
+    <Box
+      bottom="0"
       left="28%"
+      width="100%"
+      position="absolute"
+      maxWidth="7.3125rem"
+    >
+      <BottomCoin maxHeight="4.03725rem" maxWidth="6.81875rem" width="100%" />
+    </Box>
+  </Box>
+);
+
+export const FarmIllustration: FC = () => (
+  <Box
+    my="m"
+    width="100%"
+    height="15rem"
+    display="flex"
+    position="relative"
+    alignItems="center"
+    flexDirection="column"
+    justifyContent="flex-end"
+  >
+    <Box width="100%" position="absolute" maxWidth="10rem" mr="-9%">
+      <FarmingBase maxHeight="10rem" maxWidth="10rem" width="100%" />
+    </Box>
+    <Motion
+      top="0%"
+      width="100%"
+      maxWidth="8rem"
       initial="initial"
       animate="animate"
       position="absolute"
-      variants={CoinsVariants[1]}
+      variants={coinsVariants()}
     >
-      <BottomCoin maxHeight="4.03725rem" maxWidth="6.81875rem" width="100%" />
+      <FarmingCoin maxHeight="10rem" maxWidth="10rem" width="100%" />
     </Motion>
-  </>
+  </Box>
 );
-
-export default CoinsIllustration;
