@@ -115,12 +115,6 @@ export const FarmIllustration: FC = () => (
   </Box>
 );
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-export default CoinsIllustration;
-=======
->>>>>>> Stashed changes
 export const DAOIllustration: FC = () => (
   <Motion
     my="m"
@@ -155,11 +149,7 @@ export const DAOIllustration: FC = () => (
     </Motion>
     <Motion
       position="absolute"
-<<<<<<< Updated upstream
-      right="16%"
-=======
       left="46%"
->>>>>>> Stashed changes
       bottom="13%"
       variants={{
         rest: { translateY: '0%', translateX: '0%' },
@@ -181,7 +171,3 @@ export const DAOIllustration: FC = () => (
     </Motion>
   </Motion>
 );
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
