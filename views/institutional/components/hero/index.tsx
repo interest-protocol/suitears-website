@@ -45,7 +45,7 @@ const Hero: FC = () => (
           initial={{ rotate: 0 }}
           transition={transition()}
           whileHover={{ scale: 1.1 }}
-          right={['-50%', '-40%', '-20%', '-7%']}
+          right={['-70%', '-50%', '-20%', '-7%']}
           animate={{
             rotate: [-(3 * Math.random()), 3 * Math.random()],
             translateY: [
@@ -65,7 +65,7 @@ const Hero: FC = () => (
           maxHeight="6.1875rem"
           maxWidth="31.0625rem"
           whileHover={{ scale: 1.1 }}
-          left={['-50%', '-30%', '-10%', '-5%']}
+          left={['-70%', '-50%', '-10%', '-5%']}
           initial={{ rotate: 0 }}
           animate={{
             rotate: [-(3 * Math.random()), 3 * Math.random()],
@@ -81,14 +81,14 @@ const Hero: FC = () => (
           <Modules maxHeight="inherit" maxWidth="inherit" width="100%" />
         </Motion>
         <Motion
-          bottom="3rem"
-          width="38.1rem"
           maxHeight="38.1rem"
           maxWidth="20.8rem"
           position="absolute"
           initial={{ rotate: 0 }}
           transition={transition()}
           whileHover={{ scale: 1.1 }}
+          bottom={['2rem', '2rem', '3rem']}
+          width={['15rem', '17rem', '38.1rem']}
           right={['-40%', '-20%', '-10%', '-7%']}
           animate={{
             rotate: [-(3 * Math.random()), 3 * Math.random()],
@@ -107,7 +107,7 @@ const Hero: FC = () => (
           initial={{ rotate: 0 }}
           transition={transition()}
           whileHover={{ scale: 1.1 }}
-          left={['-10%', '-10%', '-10%', '0%']}
+          left={['-30%', '-30%', '-10%', '0%']}
           top={['0.5rem', '0.5rem', '0.5rem', '4rem']}
           maxWidth={['13rem', '15rem', '17rem', '20rem']}
           maxHeight={['20rem', '15rem', '17rem', '25rem']}
