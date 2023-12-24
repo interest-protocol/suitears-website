@@ -47,7 +47,7 @@ const Hero: FC = () => (
           whileHover={{ scale: 1.1 }}
           right={['-50%', '-40%', '-20%', '-7%']}
           animate={{
-            rotate: [-(5 * Math.random()), 5 * Math.random()],
+            rotate: [-(3 * Math.random()), 3 * Math.random()],
             translateY: [
               '0rem',
               `${Math.random() / 3}rem`,
@@ -68,7 +68,7 @@ const Hero: FC = () => (
           left={['-50%', '-30%', '-10%', '-5%']}
           initial={{ rotate: 0 }}
           animate={{
-            rotate: [-(5 * Math.random()), 5 * Math.random()],
+            rotate: [-(3 * Math.random()), 3 * Math.random()],
             translateY: [
               '0rem',
               `${Math.random() / 3}rem`,
@@ -91,7 +91,7 @@ const Hero: FC = () => (
           whileHover={{ scale: 1.1 }}
           right={['-30%', '-20%', '-10%', '-7%']}
           animate={{
-            rotate: [-(5 * Math.random()), 5 * Math.random()],
+            rotate: [-(3 * Math.random()), 3 * Math.random()],
             translateY: [
               '0rem',
               `${Math.random() / 3}rem`,
@@ -112,7 +112,7 @@ const Hero: FC = () => (
           maxWidth={['13rem', '15rem', '17rem', '20rem']}
           maxHeight={['20rem', '15rem', '17rem', '25rem']}
           animate={{
-            rotate: [-(5 * Math.random()), 5 * Math.random()],
+            rotate: [-(3 * Math.random()), 3 * Math.random()],
             translateY: [
               '0rem',
               `${Math.random() / 3}rem`,
@@ -133,7 +133,7 @@ const Hero: FC = () => (
           top={['0.5rem', '0.5rem', '0.5rem', '4rem']}
           maxHeight={['5rem', '5rem', '5rem', '8rem']}
           animate={{
-            rotate: [-(5 * Math.random()), 5 * Math.random()],
+            rotate: [-(3 * Math.random()), 3 * Math.random()],
             translateY: [
               '0rem',
               `${Math.random() / 3}rem`,
