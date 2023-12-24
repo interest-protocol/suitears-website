@@ -19,7 +19,12 @@ const HowItWorksCard: FC<HowItWorksCardProps> = ({
       'column',
       toRevert ? 'row-reverse' : 'row',
     ]}
-    alignItems={isCentered ? 'center' : 'flex-end'}
+    alignItems={[
+      'center',
+      'center',
+      'center',
+      isCentered ? 'center' : 'flex-end',
+    ]}
     justifyContent="center"
     mb="m"
   >

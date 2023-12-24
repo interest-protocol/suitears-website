@@ -22,7 +22,9 @@ const Header: FC = () => (
     py={['l', 'l', 'l', 'l', '2xl']}
     border="1px solid outlineVariant"
   >
-    <LogoSVG maxWidth="100%" maxHeight="2.5rem" height="100%" />
+    <Box height="2.5rem">
+      <LogoSVG maxWidth="100%" maxHeight="100%" width="100%" />
+    </Box>
     <Navbar />
     <a href={Routes[RoutesEnum.Repo]} target="_blank" rel="noreferrer">
       <Button

@@ -86,10 +86,19 @@ const Hero: FC = () => (
           maxHeight="38.1rem"
           maxWidth="20.8rem"
           position="absolute"
+<<<<<<< Updated upstream
           initial={{ rotate: 0 }}
           transition={transition()}
           whileHover={{ scale: 1.1 }}
           right={['-30%', '-20%', '-10%', '-7%']}
+=======
+<<<<<<< Updated upstream
+=======
+          initial={{ rotate: 0 }}
+          transition={transition()}
+          whileHover={{ scale: 1.1 }}
+          right={['-40%', '-20%', '-10%', '-7%']}
+>>>>>>> Stashed changes
           animate={{
             rotate: [-(3 * Math.random()), 3 * Math.random()],
             translateY: [
@@ -99,6 +108,10 @@ const Hero: FC = () => (
               `${Math.random() / 3}rem`,
             ],
           }}
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         >
           <Repository maxHeight="inherit" maxWidth="inherit" width="100%" />
         </Motion>

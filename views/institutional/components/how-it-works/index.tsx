@@ -39,10 +39,20 @@ const HowItWorks: FC = () => (
     <HowItWorksCard
       number={1}
       description="Add the following snippet in your Move.toml file"
+<<<<<<< Updated upstream
       icon={
         <Motion
           cursor="pointer"
           width="39.938rem"
+=======
+<<<<<<< Updated upstream
+      icon={<MoveTomlSVG maxWidth="39.938rem" width="100%" maxHeight="15rem" />}
+=======
+      icon={
+        <Motion
+          cursor="pointer"
+          width={['20rem', '20rem', '39.938rem']}
+>>>>>>> Stashed changes
           transition={transition()}
           initial={{ rotate: 0, scale: 1 }}
           whileHover={{
@@ -69,15 +79,29 @@ const HowItWorks: FC = () => (
           <MoveTomlSVG maxWidth="39.938rem" width="100%" maxHeight="15rem" />
         </Motion>
       }
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       toRevert={false}
     />
     <HowItWorksCard
       number={2}
       description="Find and copy the name of the DAO module."
+<<<<<<< Updated upstream
       icon={
         <Motion
           cursor="pointer"
           width="42.063rem"
+=======
+<<<<<<< Updated upstream
+      icon={<MoveDaoSVG maxWidth="42.063rem" maxHeight="24rem" width="100%" />}
+=======
+      icon={
+        <Motion
+          cursor="pointer"
+          width={['20rem', '20rem', '42.063rem']}
+>>>>>>> Stashed changes
           transition={transition()}
           initial={{ rotate: 0, scale: 1 }}
           whileHover={{
@@ -100,6 +124,10 @@ const HowItWorks: FC = () => (
           <MoveDaoSVG maxWidth="42.063rem" maxHeight="24rem" width="100%" />
         </Motion>
       }
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       toRevert
     />
     <HowItWorksCard
@@ -107,9 +135,22 @@ const HowItWorks: FC = () => (
       description="Import the DAO module"
       isCentered
       icon={
+<<<<<<< Updated upstream
         <Motion
           cursor="pointer"
           width="42.438rem"
+=======
+<<<<<<< Updated upstream
+        <MoveDaoSourceSVG
+          maxWidth="42.438rem"
+          width="100%"
+          maxHeight="26.563rem"
+        />
+=======
+        <Motion
+          cursor="pointer"
+          width={['20rem', '20rem', '42.438rem']}
+>>>>>>> Stashed changes
           transition={transition()}
           initial={{ rotate: 0, scale: 1 }}
           whileHover={{
@@ -135,6 +176,10 @@ const HowItWorks: FC = () => (
             maxHeight="26.563rem"
           />
         </Motion>
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       }
       toRevert={false}
     />
@@ -142,9 +187,18 @@ const HowItWorks: FC = () => (
       number={4}
       description="Create a DAO with one function call"
       icon={
+<<<<<<< Updated upstream
         <Motion
           cursor="pointer"
           width="43.938rem"
+=======
+<<<<<<< Updated upstream
+        <MyMoveDaoSVG maxWidth="43.938rem" width="100%" maxHeight="28.438rem" />
+=======
+        <Motion
+          cursor="pointer"
+          width={['20rem', '20rem', '43.938rem']}
+>>>>>>> Stashed changes
           transition={transition()}
           initial={{ rotate: 0, scale: 1 }}
           whileHover={{
@@ -174,6 +228,10 @@ const HowItWorks: FC = () => (
             maxHeight="28.438rem"
           />
         </Motion>
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       }
       toRevert
       isCentered
