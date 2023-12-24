@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { Toaster } from 'react-hot-toast';
 
 import { ThemeManager } from '@/components';
 
@@ -97,6 +98,7 @@ const App = ({ Component, pageProps }: AppProps) => (
       <title>SuiTears 💧</title>
     </Head>
     <Component {...pageProps} />
+    <Toaster />
   </ThemeManager>
 );
 

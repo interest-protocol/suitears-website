@@ -2,8 +2,11 @@ import { Box } from '@interest-protocol/ui-kit';
 import { FC } from 'react';
 
 import BenefitsCard from './benefit-card';
-import CoinsIllustration from './illustration/coins-illustration';
-import { DAOSVG, FarmingSVG } from './illustration/illustration-svg';
+import {
+  AirdropIllustration,
+  DAOIllustration,
+  FarmIllustration,
+} from './illustration/coins-illustration';
 
 const BenefitGroupCard: FC = () => (
   <Box
@@ -13,30 +16,18 @@ const BenefitGroupCard: FC = () => (
   >
     <BenefitsCard
       title="Airdrop"
-      Icon={
-        <Box width="100%" position="relative" height="20rem" my="m">
-          <CoinsIllustration />
-        </Box>
-      }
+      Icon={<AirdropIllustration />}
       description="Efficiently distribute tokens to a specified set of recipients after a
           defined date."
     />
     <BenefitsCard
       title="Farming"
-      Icon={
-        <Box mx="auto">
-          <FarmingSVG maxHeight="14.6rem" maxWidth="9.5rem" width="100%" />
-        </Box>
-      }
+      Icon={<FarmIllustration />}
       description="Implement reward mechanisms for coin holders over time, driving engagement and participation."
     />
     <BenefitsCard
       title="DAO"
-      Icon={
-        <Box mx="auto">
-          <DAOSVG maxHeight="11.6rem" maxWidth="17.5rem" width="100%" />
-        </Box>
-      }
+      Icon={<DAOIllustration />}
       description="Establish decentralized autonomous organizations for community-driven
         decision-making and governance."
     />
