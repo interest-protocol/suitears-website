@@ -51,6 +51,7 @@ const HowItWorks: FC = () => (
             translateY: ['0rem', '0rem'],
           }}
           animate={{
+            scale: [1, 1],
             rotate: [-(3 * Math.random()), 3 * Math.random()],
             translateY: [
               '0rem',
@@ -85,6 +86,7 @@ const HowItWorks: FC = () => (
             translateY: ['0rem', '0rem'],
           }}
           animate={{
+            scale: [1, 1],
             rotate: [-(3 * Math.random()), 3 * Math.random()],
             translateY: [
               '0rem',
@@ -116,6 +118,7 @@ const HowItWorks: FC = () => (
             translateY: ['0rem', '0rem'],
           }}
           animate={{
+            scale: [1, 1],
             rotate: [-(3 * Math.random()), 3 * Math.random()],
             translateY: [
               '0rem',
@@ -150,6 +153,7 @@ const HowItWorks: FC = () => (
             translateY: ['0rem', '0rem'],
           }}
           animate={{
+            scale: [1, 1],
             rotate: [-(3 * Math.random()), 3 * Math.random()],
             translateY: [
               '0rem',
