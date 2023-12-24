@@ -1,22 +1,21 @@
-import { Box, Button } from '@interest-protocol/ui-kit';
+import { Box } from '@interest-protocol/ui-kit';
 import { FC } from 'react';
+
+import { MENU_ITEMS } from './navbar.data';
+import NavbarItem from './navbar-item';
 
 const Navbar: FC = () => (
   <Box
     p="xs"
     gap="xs"
-    bg="lowestContainer"
     borderRadius="full"
     alignItems="center"
-    display={['none', 'flex']}
+    bg="lowestContainer"
+    display={['none', 'none', 'none', 'none', 'flex']}
   >
-    <Button variant="text">Features</Button>
-    <Box bg="onSurface" borderRadius="full" width="0.25rem" height="0.25rem" />
-    <Button variant="text">Proven</Button>
-    <Box bg="onSurface" borderRadius="full" width="0.25rem" height="0.25rem" />
-    <Button variant="text">How it works</Button>
-    <Box bg="onSurface" borderRadius="full" width="0.25rem" height="0.25rem" />
-    <Button variant="text">Documentation</Button>
+    {MENU_ITEMS.map(({ name, path }, index) => (
+      <NavbarItem name={name} path={path} index={index} key={index} />
+    ))}
   </Box>
 );
 
