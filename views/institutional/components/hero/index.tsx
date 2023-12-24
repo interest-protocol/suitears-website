@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from '@interest-protocol/ui-kit';
+import { Box, Button, Motion, Typography } from '@interest-protocol/ui-kit';
 import Link from 'next/link';
 import { FC } from 'react';
 
@@ -10,6 +10,13 @@ import Dependencies from './hero-illustration/dependencies';
 import FolderDir from './hero-illustration/folder-dir';
 import Modules from './hero-illustration/module';
 import Repository from './hero-illustration/repository';
+
+const transition = () =>
+  ({
+    repeat: Infinity,
+    repeatType: 'reverse',
+    duration: Math.random() * 2 + 1,
+  }) as never;
 
 const Hero: FC = () => (
   <Box
@@ -29,54 +36,114 @@ const Hero: FC = () => (
       height="calc(100vh - 5rem)"
     >
       <Box>
-        <Box
+        <Motion
           top="3rem"
           width="27.5rem"
           maxHeight="12rem"
           maxWidth="27.5rem"
           position="absolute"
+          initial={{ rotate: 0 }}
+          transition={transition()}
+          whileHover={{ scale: 1.1 }}
           right={['-50%', '-40%', '-20%', '-7%']}
+          animate={{
+            rotate: [-(5 * Math.random()), 5 * Math.random()],
+            translateY: [
+              '0rem',
+              `${Math.random() / 3}rem`,
+              `${Math.random() / 3}rem`,
+              `${Math.random() / 3}rem`,
+            ],
+          }}
         >
           <Dependencies maxHeight="inherit" maxWidth="inherit" width="100%" />
-        </Box>
-        <Box
+        </Motion>
+        <Motion
           bottom="10%"
           width="31.0625rem"
           position="absolute"
           maxHeight="6.1875rem"
           maxWidth="31.0625rem"
+          whileHover={{ scale: 1.1 }}
           left={['-50%', '-30%', '-10%', '-5%']}
+          initial={{ rotate: 0 }}
+          animate={{
+            rotate: [-(5 * Math.random()), 5 * Math.random()],
+            translateY: [
+              '0rem',
+              `${Math.random() / 3}rem`,
+              `${Math.random() / 3}rem`,
+              `${Math.random() / 3}rem`,
+            ],
+          }}
+          transition={transition()}
         >
           <Modules maxHeight="inherit" maxWidth="inherit" width="100%" />
-        </Box>
-        <Box
-          right={['-30%', '-20%', '-10%', '-7%']}
+        </Motion>
+        <Motion
           bottom="3rem"
           width="38.1rem"
           maxHeight="38.1rem"
           maxWidth="20.8rem"
           position="absolute"
+          initial={{ rotate: 0 }}
+          transition={transition()}
+          whileHover={{ scale: 1.1 }}
+          right={['-30%', '-20%', '-10%', '-7%']}
+          animate={{
+            rotate: [-(5 * Math.random()), 5 * Math.random()],
+            translateY: [
+              '0rem',
+              `${Math.random() / 3}rem`,
+              `${Math.random() / 3}rem`,
+              `${Math.random() / 3}rem`,
+            ],
+          }}
         >
           <Repository maxHeight="inherit" maxWidth="inherit" width="100%" />
-        </Box>
-        <Box
+        </Motion>
+        <Motion
           position="absolute"
+          initial={{ rotate: 0 }}
+          transition={transition()}
+          whileHover={{ scale: 1.1 }}
           left={['-10%', '-10%', '-10%', '0%']}
           top={['0.5rem', '0.5rem', '0.5rem', '4rem']}
           maxWidth={['13rem', '15rem', '17rem', '20rem']}
           maxHeight={['20rem', '15rem', '17rem', '25rem']}
+          animate={{
+            rotate: [-(5 * Math.random()), 5 * Math.random()],
+            translateY: [
+              '0rem',
+              `${Math.random() / 3}rem`,
+              `${Math.random() / 3}rem`,
+              `${Math.random() / 3}rem`,
+            ],
+          }}
         >
           <FolderDir maxHeight="inherit" maxWidth="inherit" width="100%" />
-        </Box>
-        <Box
+        </Motion>
+        <Motion
           position="absolute"
+          initial={{ rotate: 0 }}
+          transition={transition()}
+          whileHover={{ scale: 1.1 }}
           left={['55%', '55%', '55%', '65%']}
           maxWidth={['5rem', '5rem', '5rem', '8rem']}
           top={['0.5rem', '0.5rem', '0.5rem', '4rem']}
           maxHeight={['5rem', '5rem', '5rem', '8rem']}
+          animate={{
+            rotate: [-(5 * Math.random()), 5 * Math.random()],
+            translateY: [
+              '0rem',
+              `${Math.random() / 3}rem`,
+              `${Math.random() / 3}rem`,
+              `${Math.random() / 3}rem`,
+            ],
+          }}
         >
           <Copy maxHeight="inherit" maxWidth="inherit" width="100%" />
-        </Box>
+        </Motion>
       </Box>
       <Box
         display="flex"
